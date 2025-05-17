@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: #222;
+}
+
+#gameCanvas {
+  display: block;
+  background: url('city-background.png') no-repeat center center;
+  background-size: cover;
+}
+
+#jumpBtn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#mainMenu, #gameOver {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(34, 34, 34, 0.9);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 10;
+}
+
+#menuContainer, #overContainer {
+  text-align: center;
+}
+
+#mainMenu button, #gameOver button {
+  padding: 12px 25px;
+  font-size: 18px;
+  margin-top: 15px;
+  background: #28a745;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
